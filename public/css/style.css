@@ -2,17 +2,33 @@ body{
      display:flex;
      flex-direction: column;
      min-height: 100vh;
- 
-        font-family: "Plus Jakarta Sans", sans-serif  !important;
-        font-optical-sizing: auto;
-        font-weight: weight;
-        font-style: normal;
-        
+     margin :auto;
+    font-family: "Plus Jakarta Sans", sans-serif  !important;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    width: 100%;
+    body {
+        padding-bottom: 10rem; /* Footer ki height jitna */
+    }
+    margin-right: auto;
+    margin-left: auto;
+    
 }
 
 .container{
-    flex:1;
+    
+    box-sizing: border-box;
+    display:flex ;
+    position: center;
+    justify-content: center;
+    flex-wrap:wrap;
+    color:#222222;
+    margin-left:auto;
+    text-decoration: none;
+    align-items: center;
 }
+
 
 /* navbar */
 .navbar{
@@ -29,6 +45,9 @@ body{
     color:#222222 !important;
 
 }
+
+
+
 /* footer */
 .f-info-links a{
     text-decoration: none;
@@ -127,4 +146,13 @@ body{
 #map{
     height:400px;
     width:80vh;
+}
+.footer {
+    background-color: #ebebeb;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
 }
